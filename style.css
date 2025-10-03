@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+ 
+
+
+
+
+.hero {
+  height: 100vh; /* Высота на весь экран */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+
+  /* Картинка-фон */
+ 
+  background: url("../image/photo1.jpg") center/cover no-repeat;
+
+  /* Затемнение картинки для читаемости текста */
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* растянуть на весь блок */
+  background: rgba(0,0,0,0.5); /* прозрачный черный слой */
+}
+
+.hero h1, 
+.hero p, 
+.hero .btn {
+  position: relative; /* чтобы текст был поверх затемнения */
+}
+
+
+
+
+
+
+
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Шапка */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+.header .logo {
+  font-weight: bold;
+  color: red;
+}
+
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.phone {
+  font-weight: bold;
+}
+
+/* Главный блок */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url("https://via.placeholder.com/1200x500") center/cover no-repeat;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: red;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-light {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Услуги */
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+  gap: 20px;
+}
+
+.service {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+/* Новости */
+.news h2 {
+  margin-bottom: 20px;
+}
+
+.news-list {
+  display: flex;
+  gap: 20px;
+}
+
+.news-item {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.news-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* О нас */
+.about {
+  background: #222;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 60px 0;
+  text-align: center;
+}
+
+/* Подвал */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
